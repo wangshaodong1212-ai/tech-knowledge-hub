@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>半导体方向知识地图</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <div>
+          <h1>半导体方向知识地图</h1>
+          <p>从芯片制造到 AI 互连，把常见硬科技方向拆成能读懂的产业链位置。</p>
+        </div>
+      </div>
+      <div class="top-actions">
+        <a class="home-link" href="../../">专题集合</a>
+        <label class="searchbox" for="searchInput">
+          <span class="search-icon" aria-hidden="true"></span>
+          <input id="searchInput" type="search" placeholder="搜索 CPO、PCB、光模块、HBM..." autocomplete="off" />
+        </label>
+      </div>
+    </header>
+
+    <nav class="modebar" aria-label="内容视图">
+      <button class="mode-button active" data-view="map">方向地图</button>
+      <button class="mode-button" data-view="chain">产业链</button>
+      <button class="mode-button" data-view="metrics">指标表</button>
+      <button class="mode-button" data-view="glossary">术语卡</button>
+      <button class="mode-button" data-view="path">学习路径</button>
+    </nav>
+
+    <main class="app-shell">
+      <section class="stat-strip" aria-label="主线索">
+        <div class="stat-item">
+          <span>需求端</span>
+          <strong>AI 算力、汽车电动化、通信升级</strong>
+        </div>
+        <div class="stat-item">
+          <span>制造端</span>
+          <strong>设备、材料、工艺、良率</strong>
+        </div>
+        <div class="stat-item">
+          <span>连接端</span>
+          <strong>光模块、CPO、PCB、载板</strong>
+        </div>
+        <div class="stat-item">
+          <span>观察端</span>
+          <strong>订单、产能、价格、技术迭代</strong>
+        </div>
+      </section>
+
+      <section class="filter-row" aria-label="方向筛选">
+        <div id="tagFilters" class="tag-filters"></div>
+      </section>
+
+      <section id="mapView" class="view active" data-view-panel="map">
+        <div class="map-layout">
+          <div>
+            <div id="directionGrid" class="direction-grid"></div>
+          </div>
+          <article id="detailPane" class="detail-pane" aria-live="polite"></article>
+        </div>
+      </section>
+
+      <section id="chainView" class="view" data-view-panel="chain">
+        <div class="section-heading">
+          <span>从一台 AI 服务器往上追</span>
+          <h2>相关方向之间的关系</h2>
+        </div>
+        <div id="chainFlow" class="chain-flow"></div>
+        <div id="relationGrid" class="relation-grid"></div>
+      </section>
+
+      <section id="metricsView" class="view" data-view-panel="metrics">
+        <div class="section-heading">
+          <span>看公告和研报时优先找这些词</span>
+          <h2>方向指标速查</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>方向</th>
+                <th>核心问题</th>
+                <th>常看指标</th>
+                <th>风险信号</th>
+              </tr>
+            </thead>
+            <tbody id="metricsBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section id="glossaryView" class="view" data-view-panel="glossary">
+        <div class="section-heading">
+          <span>短定义，先建立语感</span>
+          <h2>常见术语卡</h2>
+        </div>
+        <div id="glossaryGrid" class="glossary-grid"></div>
+      </section>
+
+      <section id="pathView" class="view" data-view-panel="path">
+        <div class="section-heading">
+          <span>按这个顺序补知识最省力</span>
+          <h2>新手学习路径</h2>
+        </div>
+        <div id="learningPath" class="learning-path"></div>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
