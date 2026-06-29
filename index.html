@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>科技科普集合</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <div>
+          <h1>科技科普集合</h1>
+          <p>把半导体、AI 算力、通信、新能源等方向拆成能读懂、能复盘、能持续扩展的专题。</p>
+        </div>
+      </div>
+      <a class="primary-link" href="./topics/semiconductor/">打开半导体地图</a>
+    </header>
+
+    <main class="shell">
+      <section class="topic-board" aria-labelledby="topicsTitle">
+        <div class="section-heading">
+          <span>专题库</span>
+          <h2 id="topicsTitle">已上线专题</h2>
+        </div>
+        <div class="topic-grid">
+          <a class="topic-card live" href="./topics/semiconductor/">
+            <img src="./topics/semiconductor/assets/semiconductor.png" alt="半导体方向知识地图示意图" />
+            <span class="topic-body">
+              <span class="status">已上线</span>
+              <strong>半导体方向知识地图</strong>
+              <span>覆盖半导体设备、材料、晶圆制造、封装测试、HBM、光模块、CPO、PCB、功率半导体。</span>
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <section class="topic-board" aria-labelledby="roadmapTitle">
+        <div class="section-heading">
+          <span>后续可扩展</span>
+          <h2 id="roadmapTitle">待做专题方向</h2>
+        </div>
+        <div class="roadmap-grid">
+          <article class="roadmap-card">
+            <strong>AI 算力基础设施</strong>
+            <span>GPU、ASIC、交换机、液冷、电源、机柜、数据中心资本开支。</span>
+          </article>
+          <article class="roadmap-card">
+            <strong>机器人产业链</strong>
+            <span>控制器、伺服、减速器、传感器、执行器、整机和应用场景。</span>
+          </article>
+          <article class="roadmap-card">
+            <strong>新能源车与智能驾驶</strong>
+            <span>电池、电驱、功率半导体、激光雷达、域控、车载通信。</span>
+          </article>
+          <article class="roadmap-card">
+            <strong>低空经济</strong>
+            <span>eVTOL、空管系统、动力电池、复材、运营场景和监管节奏。</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="topic-board compact" aria-labelledby="methodTitle">
+        <div class="section-heading">
+          <span>内容模板</span>
+          <h2 id="methodTitle">每个专题都按同一套方法写</h2>
+        </div>
+        <div class="method-grid">
+          <div><b>方向地图</b><span>先建立全局分类，不被概念名带着跑。</span></div>
+          <div><b>产业链位置</b><span>上游、中游、下游分别看什么。</span></div>
+          <div><b>关键指标</b><span>把技术词翻译成订单、价格、良率、份额。</span></div>
+          <div><b>风险信号</b><span>用反向指标判断热度和基本面是否背离。</span></div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
